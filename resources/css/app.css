@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+/* Source files */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Theme customization */
+@theme {
+    /* Typography */
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* Color palette (modern & soft) */
+    --color-primary: #6366f1; /* indigo */
+    --color-secondary: #ec4899; /* pink */
+    --color-accent: #22c55e; /* green */
+    --color-dark: #0f172a; /* slate-900 */
+    --color-glass: rgba(255, 255, 255, 0.08);
+
+    /* Effects */
+    --blur-glass: blur(12px);
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    /* Animations */
+    --animate-fade-out: fade-out 4s ease-in-out forwards;
+    --animate-fade-in: fade-in 0.6s ease-out;
+    --animate-scale-in: scale-in 0.4s ease-out;
+    --animate-float: float 6s ease-in-out infinite;
+
+    /* Keyframes */
+    @keyframes fade-out {
+        0%, 70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes scale-in {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+/* Extra utility layer */
+@layer utilities {
+    .glass {
+        background: var(--color-glass);
+        backdrop-filter: var(--blur-glass);
+        -webkit-backdrop-filter: var(--blur-glass);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: var(--shadow-soft);
+    }
+
+    .text-gradient {
+        background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hover-glow:hover {
+        box-shadow: 0 0 20px var(--color-primary);
+        transition: 0.3s ease;
+    }
+}
