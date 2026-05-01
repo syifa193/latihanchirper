@@ -1,47 +1,36 @@
-<<!DOCTYPE html>
-<html lang="en" data-theme="lofi">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chirper - Home</title>
-<link rel="preconnect" href="https://fonts.bunny.net>">
-<link href="https://fonts.bunny.net/css?family=instrument-sans: 480,560,608,700" rel="stylesheet" />
-<link href="https://cdn.jsdeltvr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
-<link href="https://cdn.jsdeltvr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-<!-- Vite dimatikan sementara --> 
+    <meta charset="UTF-8">
+    <title>Chirper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen flex flex-col bg-base-200 font-sans">
-<nav class="navbar bg-base-100">
-<div class="navbar-start">
-<a href="/" class="btn btn-ghost text-xl">Chirper</a>
-</div>
-<div class="navbar-end gap-2">
-<a href="#" class="btn btn-ghost btn-sm">Sign In</a>
-<a href="#" class="btn btn-primary btn-sm">Sign Up</a>
-</div>
-</nav>
-<main class="flex-1 container mx-auto px-4 py-8">
-<div class="max-w-2xl mx-auto">
-<div class="card bg-base-100 shadow mt-8">
-<div class="card-body">
-<div>
-<h1 class="text-3xl font-bold">welcome to Chirper</h1>
-<p class="mt-4 text-base-content/60">This is your brand new Laravel application.
-Time to make it
-sing (or chirp)!</p>
-</div>
-</div>
-</div>
-</div>
+<body class="min-h-screen flex flex-col bg-gray-50">
+
+<header class="flex justify-between items-center px-10 py-4 bg-white border-b border-gray-200">
+    <div class="font-bold text-lg">Chirper</div>
+    <div class="flex gap-4 text-sm">
+        <a href="#">Sign in</a>
+        <a href="#" class="px-3 py-1 border border-gray-900 rounded-md font-medium">
+            Sign up
+        </a>
+    </div>
+</header>
+
+<main class="flex-1 flex items-center justify-center">
+    <div class="bg-white px-10 py-8 rounded-xl shadow-lg text-center max-w-md">
+        <h1 class="text-lg font-semibold mb-2">Welcome to Chirper!</h1>
+        <p class="text-sm text-gray-500">
+            This is your brand new Laravel application.
+            Time to make it sing (or chirp)!
+        </p>
+    </div>
 </main>
 
-<footer class="footer footer-center p-5 bg-base-300 text-base-content text-xs">
-<div>
-<p> 2026 Chirper - Built with Laravel and love by syifaulmuna (220170193)</p>
-</div>
+<footer class="text-center text-xs text-gray-500 py-4 border-t border-gray-200">
+    © 2026 Chirper · Built with Laravel and 🩷 by Syifaulmuna (220170193)
 </footer>
-</body>
 
+</body>
 </html>
