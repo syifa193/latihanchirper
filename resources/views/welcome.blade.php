@@ -9,7 +9,7 @@
 <link href="https://fonts.bunny.net/css?family=instrument-sans: 480,560,608,700" rel="stylesheet" />
 <link href="https://cdn.jsdeltvr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
 <link href="https://cdn.jsdeltvr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-@vite(['resources/css/app.css', 'resources/js/app.js']) 
+<!-- Vite dimatikan sementara --> 
 </head>
 
 <body class="min-h-screen flex flex-col bg-base-200 font-sans">
