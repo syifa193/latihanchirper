@@ -25,6 +25,7 @@
             This is your brand new Laravel application.
             Time to make it sing (or chirp)!
         </p>
+        <p class="text-sm text-gray-600">Now this is live on internet!</p>
     </div>
 </main>
 
